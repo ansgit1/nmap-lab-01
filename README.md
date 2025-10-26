@@ -14,6 +14,7 @@ What I did / learned
 Tools i used 
 
 - Nmap (CLI)
+- zenmap GUI mode
 - Kali Linux (attacker VM)
 
 Example Nmap commands used
