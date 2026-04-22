@@ -33,7 +33,7 @@ Example Nmap commands used
 Safety / Rules  
 I only scanned targets that are allowed for testing, such as scanme.nmap.org and my own lab machines. I did not scan random external systems without permission.  
 
-Quick SOC takeaways  
+What I learned (SOC perspective)  
 - A high number of SYN packets with little response can indicate scanning activity  
 - Scans reveal open ports and services that should be monitored and secured  
 - IDS/monitoring tools can help detect unusual scanning patterns  
