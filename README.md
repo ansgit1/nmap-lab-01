@@ -16,24 +16,24 @@ Tools I used
 
 Example Nmap commands used  
 - Simple port scan:  
-  nmap scanme.nmap.org  
+  nmap scanme.nmap.org = scans common ports to find open services  
 
 - TCP SYN (fast) scan:  
-  nmap -sS scanme.nmap.org  
+  nmap -sS scanme.nmap.org = performs a fast, stealthy SYN scan  
 
 - OS detection + version detection:  
-  nmap -A scanme.nmap.org  
+  nmap -A scanme.nmap.org = detects OS, service versions, and runs default scripts  
 
 - Aggressive scan with service/version detection:  
-  nmap -sS -sV -O scanme.nmap.org  
+  nmap -sS -sV -O scanme.nmap.org = SYN scan with service version and OS detection  
 
 - Run NSE scripts (example):  
-  nmap --script vuln scanme.nmap.org  
+  nmap --script vuln scanme.nmap.org = runs vulnerability detection scripts  
 
 Safety / Rules  
 I only scanned targets that are allowed for testing, such as scanme.nmap.org and my own lab machines. I did not scan random external systems without permission.  
 
-What I learned (SOC perspective)
+What I learned (SOC perspective) 
 - A high number of SYN packets with little response can indicate scanning activity  
 - Scans reveal open ports and services that should be monitored and secured  
 - IDS/monitoring tools can help detect unusual scanning patterns  
